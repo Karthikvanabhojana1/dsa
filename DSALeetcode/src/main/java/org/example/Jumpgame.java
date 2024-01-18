@@ -1,10 +1,11 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class Jumpgame {
-	
 	    public static boolean canJump(int[] nums) {
 	       int value = 0;
-	       
+
 	       // check if the value is at the end of the array inputed
 	        int n = nums.length;
 
@@ -25,7 +26,7 @@ public class Jumpgame {
 //if no condition is satisfied them return false
 	        return false;
 	    }
-	
+
 
 	public static void main(String[] args) {
 		int[] nums = {3,2,1,0,4};
@@ -41,5 +42,5 @@ public class Jumpgame {
 		boolean result3 = canJump(nums4);
 		System.out.println(result3); // Output: true
 	}
-	
+
 }
