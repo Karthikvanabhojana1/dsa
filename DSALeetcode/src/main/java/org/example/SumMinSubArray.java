@@ -9,10 +9,8 @@ public class SumMinSubArray {
 
 
         int sum=0;
-//        int min=Integer.MAX_VALUE;
         for (int i = 0; i < arr.length; i++) {
             int min=Integer.MAX_VALUE;
-//sum=arr[i]+sum;
             for (int j = i; j <arr.length; j++) {
                 for (int k = i; k <=j; k++) {
                     min= Math.min(min,arr[k]);

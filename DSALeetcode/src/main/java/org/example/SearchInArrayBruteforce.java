@@ -11,9 +11,7 @@ return i;
     }
 
 }
-
         return 0;
-
     }
     public static void main(String[] args) {
         int[] nums1 = {3,2,1,0,4};
