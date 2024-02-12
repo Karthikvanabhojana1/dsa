@@ -24,5 +24,23 @@ int count[]=new int[CHAR];
 String s = "anagram", t = "nagaram";
 
         System.out.println(isAnagram(s,t));
+
+
+//        System.out.println(s1.equals(t));;
     }
+
+//private method(T anentry){
+//        int where =-1;
+//        int index=0;
+//        while (where!=-1 && (index<numberofEntries)) {
+//            if(anentry.equals(bag[index])){
+//                found=true;
+//                where=index;
+//                return true;
+//            }
+//            index++
+//        }
+//        return false;
+//}
+
 }
