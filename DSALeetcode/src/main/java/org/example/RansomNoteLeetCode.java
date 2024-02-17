@@ -33,6 +33,7 @@ public class RansomNoteLeetCode {
                     if(te!=t.charAt(i)){
                         return false;
                     }
+
                 }
                 else {
                     map.putIfAbsent(s.charAt(i),t.charAt(i));
