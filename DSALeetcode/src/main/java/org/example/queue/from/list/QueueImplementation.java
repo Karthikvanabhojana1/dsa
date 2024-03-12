@@ -1,5 +1,7 @@
 package org.example.queue.from.list;
 
+import java.util.Stack;
+
 public class QueueImplementation {
 
     Node front,rear;
