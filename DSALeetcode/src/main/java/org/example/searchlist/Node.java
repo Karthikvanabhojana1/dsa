@@ -1,10 +1,13 @@
 package org.example.searchlist;
 
 public class Node {
-    int data;
-    Node next;
-    Node(int x){
+    public int data;
+    public Node next;
+    Node random;
+
+    public Node(int x){
         data=x;
         next=null;
+        random=null;
     }
 }
