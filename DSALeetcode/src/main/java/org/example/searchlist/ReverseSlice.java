@@ -40,4 +40,39 @@ public class ReverseSlice {
         System.out.println();
     }
 
+//    public ListNode reverseKGroup(ListNode head, int k) {
+//        ListNode dummy = new ListNode(0);
+//        dummy.next = head;
+//        ListNode prev = dummy;
+//
+//        while (prev != null) {
+//            prev = reverseNextK(prev, k);
+//        }
+//
+//        return dummy.next;
+//    }
+
+    // Reverse the next K nodes starting from the node after prev
+//    private ListNode reverseNextK(ListNode prev, int k) {
+//        ListNode last = prev;
+//        for (int i = 0; i < k + 1; i++) {
+//            last = last.next;
+//            if (i != k && last == null) // If the remaining nodes are less than k, no need to reverse
+//                return null;
+//        }
+//
+//        ListNode tail = prev.next;
+//        ListNode curr = prev.next.next;
+//
+//        while (curr != last) {
+//            ListNode nextTemp = curr.next;
+//            curr.next = prev.next;
+//            prev.next = curr;
+//            tail.next = nextTemp;
+//            curr = nextTemp;
+//        }
+//
+//        return tail; // Return the new prev for the next iteration
+//    }
+
 }
