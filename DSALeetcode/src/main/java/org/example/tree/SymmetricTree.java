@@ -18,6 +18,7 @@ return isMirror(root.left,root.right);
         if (left == null || right == null) {
             return false;
         }
+
         if(left.key==right.key){
            return  isMirror(left.left,right.left) && isMirror(left.right,right.right);
 
