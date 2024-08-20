@@ -1,4 +1,4 @@
-package org.example.java.basics.day1;
+package DSALeetcode.src.main.java.org.example.java.basics.day1;
 
 public class LoopusecaseWhile {
     public static void main(String[] args) {
