@@ -1,4 +1,4 @@
-package psa.clas;
+package clas;
 
 public class MergeSort {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package psa.clas;
+package clas;
 
 public class MergeSortedArray {
     public static void merge(int[] arr, int[] arr2) {

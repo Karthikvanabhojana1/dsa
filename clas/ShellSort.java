@@ -1,4 +1,4 @@
-package psa.clas;
+package clas;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package psa.clas;
+package clas;
 
 public class Square<T extends  Number>
 {
