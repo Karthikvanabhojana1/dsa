@@ -1,4 +1,4 @@
-package DSALeetcode.src.main.java.org.example.java.basics.day1;
+package day1;
 
 public class TernaryOperation {
     public static void main(String[] args) {
