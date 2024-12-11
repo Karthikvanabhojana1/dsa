@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class GenerateNonContineousSubSequencewithSum {
+public class PrintOneSubstringwithsum {
     public static void main(String[] args) {
         int[] nums = {5, 4, 3, 1, 6, 9};
         int k = 9;
@@ -16,21 +16,25 @@ public class GenerateNonContineousSubSequencewithSum {
         System.out.println(res);
     }
 
-    private static void func(List<List<Integer>> res, List<Integer> set, int index, int[] nums, int k, int total) {
+    private static boolean func(List<List<Integer>> res, List<Integer> set, int index, int[] nums, int k, int total) {
         if (total == k) {
             res.add(new ArrayList<>(set));
-            return;
+
+            return true;
         }
         if (total > k || index >= nums.length) {
-            return;
+            return false;
         }
         int sum=total+nums[index];
 
         set.add(nums[index]);
-        func(res, set, index + 1, nums, k, sum);
 
-         sum=sum- set.getLast();
+        boolean pick =func(res, set, index + 1, nums, k, sum);
+        if(pick){
+            return true;
+        }
+        sum=sum- set.getLast();
         set.removeLast();
-        func(res, set, index + 1, nums, k, sum);
+        return func(res, set, index + 1, nums, k, sum);
     }
 }

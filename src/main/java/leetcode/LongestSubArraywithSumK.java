@@ -30,7 +30,7 @@ public static int lenOfLongSubarr(int A[], int N, int K) {
 
         // Check if the sum itself equals K
         if (sum == K) {
-            maxLength = i + 1;
+            maxLength = maxLength+1;
         }
 
         // Calculate remainder and check if we've seen this sum before
