@@ -27,9 +27,7 @@ public class SubArraySumKcount {
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
 
-            // Check if the sum itself equals
 
-            // Calculate remainder and check if we've seen this sum before
             int rem = sum - k;
             if (summap.containsKey(rem)) {
                 maxLength += summap.get(sum-k);
