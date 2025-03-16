@@ -23,13 +23,14 @@ public class PascalsTriangle {
         List<Integer> resrow=new ArrayList<>();
 int result=1;
         resrow.add(result);
-
+        System.out.println("initt- "+resrow);
         for (int j = 1; j <i; j++) {
             result*=i-j;
             result=result/j;
-            System.out.println(result);
+//            System.out.println(result);
             resrow.add(result);
         }
+        System.out.println(resrow);
         return resrow;
     }
 }
