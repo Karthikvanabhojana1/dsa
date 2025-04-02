@@ -1,7 +1,7 @@
 package leetcode;
 
 public class ReverseList206 {
-    public ListNode reverseList(ListNode head) {
+    public static ListNode reverseList(ListNode head) {
         if( head==null) return head;
         if(head.next==null) return head;
         ListNode curr=head;
